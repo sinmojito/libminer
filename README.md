@@ -17,15 +17,6 @@ You can install the development version of libminer from
 ``` r
 # install.packages("pak")
 pak::pak("sinmojito/libminer")
-#> 
-#> → Package library at 'C:\Users\xpanmo\AppData\Local\Temp\RtmpYtjz04\temp_libpatha1e813576263'.
-#> → Will update 1 package.
-#> → Will download 1 package with unknown size.
-#> + libminer 0.0.0.9000 → 0.0.0.9000 [bld][cmp][dl] (GitHub: c36a99c)
-#> ℹ Getting 1 pkg with unknown size
-#> ✔ Cached copy of libminer 0.0.0.9000 (source) is the latest build
-#> ✔ Installed libminer 0.0.0.9000 (github::sinmojito/libminer@c36a99c) (67ms)
-#> ✔ 1 pkg: upd 1 [2.3s]
 ```
 
 ## Example usage
@@ -39,9 +30,19 @@ lib_summary()
 #>                                                                  Library
 #> 1                                     C:/Program Files/R/R-4.6.1/library
 #> 2                        C:/Users/xpanmo/AppData/Local/R/win-library/4.6
-#> 3 C:/Users/xpanmo/AppData/Local/Temp/RtmpYtjz04/temp_libpatha1e813576263
+#> 3 C:/Users/xpanmo/AppData/Local/Temp/RtmpYtjz04/temp_libpatha1e835c72a38
 #>   n_packages
 #> 1         30
 #> 2        160
 #> 3          1
+# specify `sizes = TRUE` to calculate the total size on disk of your packages
+lib_summary(sizes = TRUE)
+#>                                                                  Library
+#> 1                                     C:/Program Files/R/R-4.6.1/library
+#> 2                        C:/Users/xpanmo/AppData/Local/R/win-library/4.6
+#> 3 C:/Users/xpanmo/AppData/Local/Temp/RtmpYtjz04/temp_libpatha1e835c72a38
+#>   n_packages lib_size
+#> 1         30   75.65M
+#> 2        160  320.18M
+#> 3          1   16.92K
 ```

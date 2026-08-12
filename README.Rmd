@@ -24,7 +24,7 @@ The goal of libminer is to ...
 
 You can install the development version of libminer from [GitHub](https://github.com/) with:
 
-``` {r}
+``` r
 # install.packages("pak")
 pak::pak("sinmojito/libminer")
 ```
@@ -37,4 +37,6 @@ optionally with the total sizes, use the `lib_summary()` function:
 ```{r example}
 library(libminer)
 lib_summary()
+# specify `sizes = TRUE` to calculate the total size on disk of your packages
+lib_summary(sizes = TRUE)
 ```
