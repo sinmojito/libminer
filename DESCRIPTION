@@ -11,7 +11,7 @@ Description: Provides functions for learning about your R libraries, and the
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-URL: https://github.com/sinmojito/libminer
+URL: https://github.com/sinmojito/libminer, https://sinmojito.github.io/libminer/
 BugReports: https://github.com/sinmojito/libminer/issues
 Config/roxygen2/version: 8.1.0
 Suggests: 
