@@ -9,6 +9,8 @@ Useful links:
 
 - <https://github.com/sinmojito/libminer>
 
+- <https://sinmojito.github.io/libminer/>
+
 - Report bugs at <https://github.com/sinmojito/libminer/issues>
 
 ## Author
